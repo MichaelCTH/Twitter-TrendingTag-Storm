@@ -1,0 +1,14 @@
+{
+  "name": "viewerapp",
+  "version": "1.0.0",
+  "description": "a viewer for trendig topics",
+  "main": "App.js",
+  "scripts": {
+    "start": "node App.js"
+  },
+  "author": "Tonghao Chen",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}
