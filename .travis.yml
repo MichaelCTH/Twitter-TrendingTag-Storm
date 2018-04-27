@@ -1,0 +1,12 @@
+matrix:
+  include:
+    # storm-cassandra-pulling
+    - language: java
+      jdk: oraclejdk8
+      #before_script: 
+      script:
+        - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+        - mvn test -B
+      #after_script:
+notifications:
+  email: false
