@@ -12,11 +12,12 @@ matrix:
     # Viewer
     - language: node_js
       node_js:
-        - "stable"
-      before_script: cd ./ViewerApp
-      install:
+        - node
+      before_script: 
+        - cd ./ViewerApp
         - npm install
       script:
+        - npm test
       after_script: cd ../
       
 notifications:
