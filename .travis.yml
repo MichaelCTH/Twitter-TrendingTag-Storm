@@ -8,5 +8,16 @@ matrix:
         - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
         - mvn test -B
       #after_script:
+
+    # Viewer
+    - language: node_js
+      node_js:
+        - "stable"
+      before_script: cd ./ViewerApp
+      install:
+        - npm install
+      script:
+      after_script: cd ../
+      
 notifications:
   email: false
